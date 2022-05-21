@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/GuliMall_Demo02.iml" filepath="$PROJECT_DIR$/.idea/GuliMall_Demo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gulimail_coupon/gulimail_coupon.iml" filepath="$PROJECT_DIR$/gulimail_coupon/gulimail_coupon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gulimail_member/gulimail_member.iml" filepath="$PROJECT_DIR$/gulimail_member/gulimail_member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gulimail_order/gulimail_order.iml" filepath="$PROJECT_DIR$/gulimail_order/gulimail_order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gulimail_product/gulimail_product.iml" filepath="$PROJECT_DIR$/gulimail_product/gulimail_product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gulimail_ware/gulimail_ware.iml" filepath="$PROJECT_DIR$/gulimail_ware/gulimail_ware.iml" />
+    </modules>
+  </component>
+</project>
