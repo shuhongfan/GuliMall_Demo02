@@ -1,0 +1,16 @@
+package com.shf.gulimail.modules.ware.dao;
+
+import com.shf.gulimail.common.dao.BaseDao;
+import com.shf.gulimail.modules.ware.entity.PurchaseDetailEntity;
+import org.apache.ibatis.annotations.Mapper;
+
+/**
+ * 
+ *
+ * @author shuhongfan shuhongfan@foxmail.com
+ * @since 1.0.0 2022-05-21
+ */
+@Mapper
+public interface PurchaseDetailDao extends BaseDao<PurchaseDetailEntity> {
+	
+}

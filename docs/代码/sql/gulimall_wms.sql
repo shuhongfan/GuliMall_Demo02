@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.25 (64 bit)
 MySQL - 5.7.27 : Database - gulimall_wms
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -30,6 +31,8 @@ CREATE TABLE `undo_log` (
   `log_created` datetime NOT NULL,
   `log_modified` datetime NOT NULL,
   `ext` varchar(100) DEFAULT NULL,
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ux_undo_log` (`xid`,`branch_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -51,6 +54,8 @@ CREATE TABLE `wms_purchase` (
   `amount` decimal(18,4) DEFAULT NULL,
   `create_time` datetime DEFAULT NULL,
   `update_time` datetime DEFAULT NULL,
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='采购信息';
 
@@ -68,6 +73,8 @@ CREATE TABLE `wms_purchase_detail` (
   `sku_price` decimal(18,4) DEFAULT NULL COMMENT '采购金额',
   `ware_id` bigint(20) DEFAULT NULL COMMENT '仓库id',
   `status` int(11) DEFAULT NULL COMMENT '状态[0新建，1已分配，2正在采购，3已完成，4采购失败]',
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -82,6 +89,8 @@ CREATE TABLE `wms_ware_info` (
   `name` varchar(255) DEFAULT NULL COMMENT '仓库名',
   `address` varchar(255) DEFAULT NULL COMMENT '仓库地址',
   `areacode` varchar(20) DEFAULT NULL COMMENT '区域编码',
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='仓库信息';
 
@@ -106,6 +115,8 @@ CREATE TABLE `wms_ware_order_task` (
   `create_time` datetime DEFAULT NULL COMMENT 'create_time',
   `ware_id` bigint(20) DEFAULT NULL COMMENT '仓库id',
   `task_comment` varchar(500) DEFAULT NULL COMMENT '工作单备注',
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='库存工作单';
 
@@ -123,6 +134,8 @@ CREATE TABLE `wms_ware_order_task_detail` (
   `task_id` bigint(20) DEFAULT NULL COMMENT '工作单id',
   `ware_id` bigint(20) DEFAULT NULL COMMENT '仓库id',
   `lock_status` int(1) DEFAULT NULL COMMENT '1-已锁定  2-已解锁  3-扣减',
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='库存工作单';
 
@@ -139,6 +152,8 @@ CREATE TABLE `wms_ware_sku` (
   `stock` int(11) DEFAULT NULL COMMENT '库存数',
   `sku_name` varchar(200) DEFAULT NULL COMMENT 'sku_name',
   `stock_locked` int(11) DEFAULT '0' COMMENT '锁定库存',
+  creator              bigint   comment '创建者',
+   create_date          datetime   comment '创建时间',
   PRIMARY KEY (`id`),
   KEY `sku_id` (`sku_id`) USING BTREE,
   KEY `ware_id` (`ware_id`) USING BTREE

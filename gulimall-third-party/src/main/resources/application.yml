@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.120.20:8848
+  application:
+    name: gulimall-third-party
+
+server:
+  port: 30000
+
+alibaba:
+  cloud:
+    access-key: LTAI5tBpuKeBykMF3j88TZWX
+    secret-key: Er6qd8FQkSL9MWnSnBCV4jZ7h9bxHK
+    roleArn: acs:ram::1261609978335435:role/gulimalloss
+    roleSessionName : GulimallOSS
+    oss:
+      endpoint: oss-cn-guangzhou.aliyuncs.com
+      bucket: gulimall-shf

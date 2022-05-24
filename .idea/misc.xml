@@ -3,6 +3,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -15,10 +16,24 @@
         <option value="$PROJECT_DIR$/gulimail_member/pom.xml" />
         <option value="$PROJECT_DIR$/gulimail_coupon/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/renren-security/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimail-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimail_third_party/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall_third_party/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall_common/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-common/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-third-party/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-product/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-order/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-member/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-coupon/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimail-ware/pom.xml" />
+        <option value="$PROJECT_DIR$/gulimall-ware/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
